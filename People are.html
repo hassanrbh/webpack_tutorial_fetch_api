@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://127.0.0.1:5500/dist/? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./People are_files/jquery-3.5.0.js"></script>
+    <title>People are</title>
+    <style>
+        html,
+        body,
+        canvas {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+<style>body {
+    background: gray;
+    padding: 0;
+    margin: 0;
+}
+
+#register {
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 14px;
+    background-color: firebrick;
+    margin: 20px;
+}
+
+.toggleSubmit {
+    border: 2px solid black;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(249, 45, 45), rgb(162, 111, 111));
+    padding: 3px 20px;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.5;
+}
+
+.toggleWait {
+    border: 2px solid black;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(202 227 174), rgb(105 188 9));
+    padding: 3px 20px;
+    cursor: pointer
+}</style></head>
+
+<body>
+    <div class="container">
+        <form>
+            <input type="text" id="register" style="background: rgb(0, 100, 125); transition: background 1s ease-in-out 0s;">
+            <input type="submit" class="toggleSubmit">
+        </form>
+    </div>
+    <div class="main">
+        <ul class="nav"></ul>
+    </div>
+    <ul>
+    </ul>
+
+    <ul id="coll-things"><li>sas</li><li>sas</li></ul>
+
+    <form id="cool-things-happends">
+        <label>
+            Coll Things
+            <input type="text" id="cool-thing">
+        </label>
+        <input type="submit" value="create Coll Things">
+    </form>
+
+    <script src="./People are_files/bundle.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
