@@ -1,7 +1,7 @@
 import '../src/styles.css'
 import Icon from '../img/ball_bouncing.jpg'
 import background from '../img/space.jpeg'
-
+import fetchandAppendDataAttribues from '../src/components/data-attribute'
 
 let register_button = $("#register")
 let submit_button = $(".toggleSubmit")
@@ -152,3 +152,5 @@ $happy_form.on("submit", (event) => {
 //     all_things_happend[curr_d].push(input_val);
 // }
 // console.log(all_things_happend)
+
+fetchandAppendDataAttribues();
