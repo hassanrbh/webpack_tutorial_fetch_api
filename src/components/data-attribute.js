@@ -32,6 +32,9 @@ export default function fetchandAppendDataAttribues() {
         } else {
             e.target.style.color = "green";
         }
+        $(e.currentTarget).html((index, oldHtml) => {
+            return `${oldHtml} Men This Shit Is nice`;
+        });
 
         let $target = $(e.currentTarget);
 
@@ -39,5 +42,9 @@ export default function fetchandAppendDataAttribues() {
         let dog = DOGS[dogId];
 
         console.log(`dog: ${dog.name}`)
+    })
+
+    $("form#cool-things-happends #cool-thing").blur((e) => {
+        $(e.currentTarget).val($(e.currentTarget).val().toUpperCase())
     })
 }

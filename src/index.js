@@ -9,7 +9,6 @@ let all_alis = document.querySelectorAll("li");
 let $listItems = $("li");
 
 submit_button.on("click", (e) => {
-    e.preventDefault();
     $(".toggleSubmit").css({
         "transition": "opacity 1s ease-in-out",
         "opacity": "0.5",
